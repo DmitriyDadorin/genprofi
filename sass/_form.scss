@@ -81,8 +81,8 @@
   right: 0;
   transform: translateX(-50%);
   @include respond(tab-land) { 
-    top: 30%;
-    right: -15%;
+    position: relative;
+    transform: translateY(0); 
 	}
   @include respond(tab-port) { 
     position: relative;
