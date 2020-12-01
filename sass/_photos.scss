@@ -1,0 +1,57 @@
+.photos{
+  width: 100%;
+  padding: 2rem; 
+  &__box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__wrapper{
+    width: 45rem; 
+    height: 30rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: $box-shadow;
+    transition: all 0.4s; 
+    &--1{
+      background-image: url(../img/gallery/item-1.jpg);
+      background-size: cover;
+    }
+    &--2{
+      background-image: url(../img/gallery/item-2.jpg); 
+      background-size: cover;
+    }
+    &--3{
+      background-image: url(../img/gallery/item-3.jpg); 
+      background-size: cover; 
+    }
+    &--4{
+      background-image: url(../img/gallery/item-4.jpg); 
+      background-size: cover; 
+    } 
+    &--5{
+      background-image: url(../img/gallery/item-5.jpg); 
+      background-size: cover;  
+    } 
+    &--6{
+      background-image: url(../img/gallery/item-6.jpg); 
+      background-size: cover; 
+    }
+    &--7{
+      background-image: url(../img/gallery/item-7.jpg); 
+      background-size: cover; 
+    }
+    &--8{
+      background-image: url(../img/gallery/item-8.jpg);  
+      background-size: cover; 
+    }
+    &--9{
+      background-image: url(../img/gallery/item-9.jpg);  
+      background-size: cover; 
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

@@ -1,0 +1,221 @@
+.header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: $bcg-header-color; 
+  @include respond(tab-land) {
+    height: auto;
+  } 
+  @include respond(tab-port) {   
+    height: auto;
+  } 
+  @include respond(phone) {  
+    height: auto;
+  } 
+  &--dgu{
+    width: 100%;
+    height: 100%;
+    position: relative;  
+    background-color: $bcg-grey-color;               
+  } 
+  &--ups{
+    width: 100%;
+    height: 100%;
+    position: relative;  
+    background-color: $bcg-grey-color;                
+  } 
+  &--info{
+    width: 100%;
+    height: 100%;
+    position: relative;  
+    background-color: $bcg-grey-color; 
+  }
+  &--contacts{ 
+    width: 100%;
+    height: 100%;
+    position: relative;  
+    background-color: $bcg-grey-color;   
+  }
+  &--photo{
+    width: 100%;
+    height: 100%;
+    position: relative;  
+    background-color: $bcg-grey-color;    
+  }
+
+  &__container{ 
+    width: 100%;  
+    margin: 0 auto; 
+    @include respond(big-desktop) {   
+      max-width: 1440px;
+    } 
+  } 
+  &__top{   
+    width: 100%;
+    padding: 2rem;    
+    display: flex;
+    justify-content: space-between;  
+    @include respond(tab-port) {   
+      align-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include respond(phone) {   
+      align-content: center;
+      flex-direction: column;
+      align-items: center;
+    } 
+  }
+  &__logo-box{
+    display: flex; 
+    align-items: flex-start;
+    @include respond(tab-port) {   
+      width: 100%;
+      justify-content: center;
+    }
+    @include respond(phone) {   
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  &__nav{
+    @include respond(tab-land) {
+      justify-content: center;  
+    }
+    @include respond(tab-port) {   
+      width: 100%;
+      justify-content: center;  
+    }
+    @include respond(phone) {   
+      width: 100%;
+      justify-content: center;  
+    }
+  }
+  &__list{
+    display: flex;      
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 2rem;  
+    @include respond(tab-port) {   
+      width: 100%;
+      flex-direction: column;
+      justify-content: center; 
+      padding-top: 1.5rem;   
+    } 
+    @include respond(phone) {   
+      width: 100%;
+      flex-direction: column;
+      justify-content: center; 
+      padding-top: 1.5rem;
+    }  
+  }
+  &__item{
+    list-style: none; 
+  }
+  &__item:not(:last-child){
+    @include respond(tab-port) {
+      margin-bottom: 1rem; 
+    } 
+    @include respond(phone) {
+      margin-bottom: 1rem; 
+    } 
+  }
+  &__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;  
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      display: flex;
+      justify-content: center; 
+      padding-top: 0.5rem;   
+    }
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      justify-content: center; 
+      padding-top: 0.5rem;   
+    }
+  }
+  &__link--select {
+    color: $main-orange-color !important;
+  }
+  &__link:visited,
+  &__link:link{
+    font-family: $robotoText;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;      
+    color: $white;      
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0 8px 0 8px;
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+    @keyframes bounce {
+      0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+      }
+    
+      40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+    
+      80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+    }
+    &:hover{
+      display: block;
+      transform: scale(1.07);
+    }
+  }
+  &__bottom{
+    width: 100%;
+    padding: 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(tab-port) {   
+      flex-direction: column;
+      width: 100%;
+      justify-content: center; 
+      padding-top: 1.5rem;   
+    }
+    @include respond(phone) {   
+      flex-direction: column;
+      width: 100%;
+      justify-content: center; 
+      padding-top: 1.5rem;   
+    }
+  } 
+  &__presentation{
+    flex: 0 1 56%;
+  }
+  &__form{
+    flex: 0 1 31%;
+    @include respond(tab-land) {   
+      flex: 0 0 36%;
+      margin-top: 2rem;  
+    }
+    @include respond(tab-port) {   
+      flex: 0 0 31%;
+      margin-top: 2rem;  
+    } 
+    @include respond(phone) {   
+      margin-top: 2rem;  
+    } 
+  }
+}
+     

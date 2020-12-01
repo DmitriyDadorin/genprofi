@@ -1,0 +1,55 @@
+.serving{
+  width: 100%;
+  padding: 4rem 0;
+  background: $white;
+  &__container{
+    width: 1140px;
+    margin: 0 auto;
+    @include respond(tab-port) {  
+      width: 100%;
+    } 
+    @include respond(phone) {  
+      width: 100%;
+    } 
+  }
+  &__brands{
+    width: 100%;
+    margin-top: 5rem;
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: space-between;
+    @include respond(tab-port) {
+      width: 100%; 
+      flex-direction: column;
+      align-items: center;
+      align-content: center; 
+    } 
+    @include respond(phone) {
+      width: 100%; 
+      flex-direction: column;
+      align-items: center;
+      align-content: center; 
+    }   
+  } 
+  &__brand{
+    width: 30%;
+    margin-top: 5rem;
+    @include respond(tab-port) {
+      width: auto; 
+      flex-direction: column;
+      align-items: center;
+      align-content: center; 
+    }
+    @include respond(phone) {
+      width: auto; 
+      flex-direction: column;
+      align-items: center;
+      align-content: center; 
+    }
+  }
+  &__brand-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

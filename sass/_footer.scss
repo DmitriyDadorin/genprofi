@@ -1,0 +1,161 @@
+.footer{
+	width: 100%;
+	padding: 2rem 0;
+	background-color: $bcg-footer-color;
+	&__container{
+		width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+		align-items: center;
+		@include respond(tab-land) {   
+			width: 100%;
+		}
+		@include respond(tab-port) {   
+			width: 100%;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+		}
+		@include respond(phone) {   
+			width: 100%;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__logo-box{
+		width: 50%;
+		@include respond(tab-port) { 
+			margin-top: 2rem;  
+			width: 100%;
+		}
+		@include respond(phone) { 
+			margin-top: 2rem;  
+			width: 100%;
+		}
+	}
+	&__link{
+		display: flex;
+		flex-direction: column;
+	}
+	&__user-box{
+		display: flex;
+		flex-direction: column;
+		@include respond(tab-port) {  
+			width: 100%; 
+			align-items: center;
+			justify-content: center;
+		}
+		@include respond(phone) {  
+			width: 100%; 
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+.ownership-box{
+	width: 30%;
+	@include respond(tab-port) {   
+		width: 100%;
+	}
+	@include respond(phone) {   
+		width: 100%;
+	}
+	&__text{
+		font-family: $openSansText;
+		font-weight: 400;
+		color: $white;
+		font-size: 1.5rem;
+		line-height: 1.9rem;
+		@include respond(tab-port) {   
+			text-align: center;
+		}
+		@include respond(phone) {   
+			text-align: center;
+		}
+	}
+}
+.copyright-box{
+	width: 100%;
+	margin-bottom: 1.2rem;
+	@include respond(tab-port) {   
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+	@include respond(phone) {   
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+	&__text{
+		font-family: $openSansText;
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: $white;
+		@include respond(tab-port) { 
+			margin-top: 1rem;  
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+		@include respond(phone) { 
+			margin-top: 1rem;  
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+.desing-box{
+	width: 100%;
+	margin-bottom: 1.2rem; 
+	margin-top: 1rem;  
+	text-align: center;
+	@include respond(tab-port) { 
+		margin-top: 0.5rem;  
+	}
+	@include respond(phone) { 
+		margin-top: 0.5rem;  
+	}
+	&__text{
+		font-family: $openSansText;
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: $white;
+	}
+	&__link:link,
+	&__link:visited{
+		font-family: $openSansText;
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: $main-orange-color-2;
+		text-decoration: none;
+		&:hover{
+			transition: all 0.3s;
+			color: $white;
+		}
+	}
+}
+.social-box{
+	width: 100%;
+	@include respond(tab-port) { 
+		display: flex; 
+		justify-content: center;
+	}
+	@include respond(phone) { 
+		display: flex; 
+		justify-content: center;
+	}
+	&__icon{
+		fill: $white;
+        width: 4.5rem;
+        height: 4.5rem;
+        cursor: pointer;
+        transition: all 0.6s;
+        &:hover{
+        	transition: all 0.6s;
+        	transform: rotateY(180deg);
+        	fill: $main-orange-color-2;
+        }
+	}
+}

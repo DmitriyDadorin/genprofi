@@ -1,0 +1,78 @@
+td{
+  border: 1px solid $white;
+}
+th{
+  border: 1px solid $white;
+}
+.table{
+  width: 100%;
+  border: 1px solid $white; 
+  border-collapse: collapse;
+  &__power,
+  &__form-sm{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+    color: $main-orange-color-3; 
+    text-align: center;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+  &__number-sm{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+    color: $white; 
+    text-align: center; 
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+  &__price{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    font-weight: bold;
+    color: $main-orange-color-3; 
+    text-align: center;
+    @include respond(phone) {
+      font-size: 1rem; 
+    }
+  }
+  &__graduation{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+    color: $white; 
+    text-align: center; 
+    @include respond(phone) {
+      width: 100%; 
+      font-size: 1rem; 
+    }
+  }
+  &__footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+    color: $main-orange-color-3; 
+    text-align: center;
+    @include respond(phone) {
+      width: 100%; 
+      font-size: 1rem; 
+    }
+    &--mod{
+      font-size: 2.1rem;
+      color: $white;  
+      font-weight: 700;
+      @include respond(phone) {
+        width: 100%; 
+        font-size: 1rem; 
+      }
+    }
+  }
+}

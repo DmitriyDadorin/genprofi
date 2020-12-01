@@ -1,0 +1,26 @@
+.logo-box{
+  &__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &--footer{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__img{
+    height: 6rem;
+    margin-right: 1.2rem;
+    &--footer{
+      height: 9.5rem;
+    }
+  }
+  &__text{
+    font-family: 'Oswald', sans-serif;  
+    font-size: 2rem; 
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    color: $white; 
+  }
+}
