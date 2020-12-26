@@ -3,7 +3,6 @@
   padding: 4rem 0;
   background: $white;
   &__container{
-    width: 1140px;
     margin: 0 auto;
     @include respond(tab-port) {  
       width: 100%;
@@ -13,11 +12,11 @@
     } 
   }
   &__brands{
-    width: 100%;
     margin-top: 5rem;
-    flex-wrap: wrap; 
+    align-items: center;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @include respond(tab-port) {
       width: 100%; 
       flex-direction: column;
@@ -32,8 +31,7 @@
     }   
   } 
   &__brand{
-    width: 30%;
-    margin-top: 5rem;
+    margin: 10px;
     @include respond(tab-port) {
       width: auto; 
       flex-direction: column;

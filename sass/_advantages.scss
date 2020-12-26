@@ -9,7 +9,6 @@
     padding: 2em 0;
   }
   &__container{
-    width: 1140px;
     margin: 0 auto;
     @include respond(tab-land) { 
       width: 100%;

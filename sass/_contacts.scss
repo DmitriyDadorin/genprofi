@@ -6,7 +6,6 @@
         padding: 2rem 0rem;
     }
     &__container{
-        width: 1140px;
         margin: 0 auto;
         @include respond(tab-land) {   
             width: 100%;
@@ -19,7 +18,7 @@
         }
     }
     &__list{
-        margin: 5rem 0rem 0rem 0rem;
+        margin-left: 25px;
         @include respond(phone) {   
             width: 100%;
             margin: 2rem 0rem 0rem 0rem;
@@ -37,7 +36,7 @@
             line-height: 2.7rem;
         }
         &:not(:last-child){
-            margin-bottom: 2rem;
+            margin-bottom: 10px;
         }
         &--mod{
             white-space: nowrap;

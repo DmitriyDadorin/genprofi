@@ -3,7 +3,7 @@
 	padding: 2rem 0;
 	background-color: $bcg-footer-color;
 	&__container{
-		width: 1140px;
+		padding: 0 25px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@
 			width: 100%;
 		}
 		@include respond(phone) { 
-			margin-top: 2rem;  
+			margin-top: 2rem;
 			width: 100%;
 		}
 	}

@@ -80,7 +80,7 @@
   }
   &__nav{
     @include respond(tab-land) {
-      justify-content: center;  
+      justify-content: center;
     }
     @include respond(tab-port) {   
       width: 100%;
@@ -157,6 +157,12 @@
     @include respond(tab-land) {
       font-size: 1.5rem;
     }
+      @include respond(big-land) {
+        font-size: 12px;
+      }
+      @include respond(smal-text) {
+        font-size: 8px;
+      }
     &:not(:last-child){
       margin-right: 2rem;
     }
