@@ -1,0 +1,201 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) { @content };    //600px
+  }
+  @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) { @content };     //900px
+  }
+  @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) { @content };    //1200px
+  }
+  @if $breakpoint == smal-text {
+    @media only screen and (max-width: 68.5em) { @content };    //1100px
+}
+@if $breakpoint == big-land {
+    @media only screen and (max-width: 87.5em) { @content };    //1400px
+}
+  @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 90em) { @content };    //1440
+  }
+}
+
+.form{
+  width: 100%; 
+  padding: 2rem; 
+  background-color: yellowgreen;    
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .6);
+  &__group{
+    margin-bottom: 2rem; 
+    @include respond(phone)  {   
+      margin-bottom: 1rem;
+    }
+  }
+  &__input{
+    width: 100%;
+    padding: 1.2rem 1.8rem;  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;    
+    line-height: 2rem; 
+    color: black;
+    border: none;
+    outline: none; 
+    &::placeholder{   
+      color: black;    
+    } 
+  }
+  &__textarea{
+    width: 100%;
+    height: 13rem; 
+    padding: 1.2rem 1.8rem; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;    
+    line-height: 2rem; 
+    color: $black;
+    border: none;
+    outline: none; 
+    resize: none;  
+    @include respond(phone) {   
+      height: 10rem;
+    } 
+    &::placeholder{ 
+      color: white;     
+    } 
+  }
+  &__buttom{
+    display: block;
+    margin: 0 auto; 
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.6rem 4.6rem; 
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;   
+    text-align: center;
+    outline: none;
+    border: none;  
+    color: white;  
+    background-color: orangered;  
+    text-transform: uppercase;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, .6); 
+    cursor: pointer;
+    transition: all .5s;
+    @include respond(phone) {   
+      font-size: 1.3rem;    
+      line-height: 1.6rem;
+    } 
+    &:hover{
+      background-color: green; 
+      opacity: 0.5;
+    } 
+  } 
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button_popup {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button_popup:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 10%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.intro__submit-form{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translateX(-50%);
+  @include respond(tab-land) { 
+    position: relative;
+    transform: translateY(0); 
+	}
+  @include respond(tab-port) { 
+    position: relative;
+    transform: translateY(0); 
+	}
+  @include respond(phone) { 
+    position: relative;
+    transform: translateY(0);
+	}  
+}
+.intro__submit-form{
+  display: none;
+}
+.intro__submit-form.visible{
+  display:block;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: https://genprofi.ru/
+Sitemap: https://genprofi.ru/sitemap.xml
