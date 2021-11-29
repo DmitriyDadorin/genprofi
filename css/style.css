@@ -290,7 +290,7 @@ h3, .h3 {
     top: -70px;
     left: 0;
     right: 0;
-    background: #c2581e;
+    background: #000000;
     z-index: 99;
     transform: translateY(70px);
     transition: transform 500ms ease, 500ms ease;
@@ -387,7 +387,7 @@ h3, .h3 {
     margin-top: 27px;
     margin-bottom: 23px; }
   .header_area .navbar {
-    background: #c2581e; }
+    background: #000000; }
     .header_area .navbar--color {
       color: #fff !important; }
   .navbar-toggler[aria-expanded='false'] span:nth-child(2) {
