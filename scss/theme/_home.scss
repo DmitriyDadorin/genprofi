@@ -614,24 +614,27 @@
   justify-content: center;
   flex-direction: column;
 }
-// .hide {
-//   display: none;
-// }
-// .form__error {
-//   color: red;
-//   text-align: left;
-//   font-size: 12px;
-//   display: block;
-//   margin-top: 3px;
-//   display: none;
-// }
-// input:valid:not(:placeholder-shown) {
-//   border-color: green;
-// }
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa,
+      0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
 
-// input:invalid:not(:placeholder-shown) {
-//   border-color: red;
-// }
-// input:invalid:not(:placeholder-shown) + .form__error {
-//   display: block;
-// }
+.sale {
+  font-size: 35px;
+  // color: rgb(250, 46, 46);
+  animation: flicker 3s infinite alternate;
+  color: #fff;
+}
